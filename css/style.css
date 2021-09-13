@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, serif;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: xx-large;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+}
+
+.content_container {
+    position: absolute;
+    width: 680px;
+    height: 1080px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+}
+
+header {
+    width: 480px;
+    height: 40px;
+    margin-top: 100px;
+    margin-left: 100px;
+    /*background-color: lightgrey;*/
+}
+
+.top_bar {
+    display: flex;
+}
+
+.logo_pineapple {
+    margin-left: 11px;
+    margin-bottom: 4px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin-top: 18px;
+    margin-right: 1px;
+
+}
+
+.menu a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #6A707B;
+}
+
+section {
+    width: 480px;
+    height: 400px;
+    margin-top: 238px;
+    margin-left: 100px;
+    /*background-color: tomato;*/
+}
+
+.title {
+    margin-left: 40px;
+    margin-bottom: 19px;
+}
+
+
+.text p {
+    margin-left: 40px;
+    color: #6A707B;
+    line-height: 28px;
+}
+
+.input .email {
+    width: 616px;
+    height: 66px;
+    margin-top: 50px;
+    font-family: Arial, serif;
+    font-size: 16px;
+    padding-left: 40px;
+    border: 1px solid #E3E3E4;
+    border-left: 4px solid #4066A5;
+}
+
+
+.image_desk {
+    position: absolute;
+    left: 680px;
+    z-index: -1;
+}
+
+.image_mob {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        /*background-color: red;*/
+        font-size: 14px;
+    }
+
+    .content_container {
+        width: 375px;
+        height: 812px;
+    }
+
+    header {
+        /*display: none;*/
+        position: absolute;
+        width: 375px;
+        height: 66px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .top_bar {
+        width: 375px;
+        height: 66px;
+        align-items: center;
+    }
+
+    .logo_union {
+        margin-left: 20px;
+    }
+
+    .logo_pineapple {
+        display: none;
+    }
+
+    .menu {
+        margin: 0 21px 0 0;
+        padding: 0;
+    }
+
+    .menu li a {
+        margin: 0 0 0 21px;
+        padding: 0;
+    }
+
+    section {
+        position: absolute;
+        z-index: 1;
+        width: 335px;
+        height: 371px;
+        margin: 0;
+        padding: 0;
+        top: 254px;
+        left: 20px;
+        background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+    }
+
+    .image_desk {
+        display: none;
+    }
+
+    .image_mob {
+        display: block;
+        position: absolute;
+        top: 66px;
+    }
+}
