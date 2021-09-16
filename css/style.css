@@ -9,11 +9,16 @@ h1 {
     font-weight: 400;
     font-size: xx-large;
     margin: 0;
+    padding: 0;
 }
 
 p {
     margin: 0;
     padding: 0;
+}
+
+a {
+    color: black;
 }
 
 .container {
@@ -64,10 +69,9 @@ header {
 
 section {
     width: 480px;
-    height: 400px;
+    height: 460px;
     margin-top: 238px;
     margin-left: 100px;
-    /*background-color: tomato;*/
 }
 
 .title {
@@ -82,15 +86,87 @@ section {
     line-height: 28px;
 }
 
-.input .email {
-    width: 616px;
-    height: 66px;
-    margin-top: 50px;
-    font-family: Arial, serif;
-    font-size: 16px;
-    padding-left: 40px;
+.input_email form {
+    width: 663px;
+    height: 70px;
+    margin-top: 51px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
     border: 1px solid #E3E3E4;
     border-left: 4px solid #4066A5;
+
+}
+
+.email {
+    width: 576px;
+    height: 100%;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border: none;
+    font-family: Arial, serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.btn {
+    margin-left: 15px;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+.tos {
+    margin-top: 53px;
+    margin-left: 40px;
+}
+
+.tos_content {
+    display: flex;
+}
+
+.check {
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    margin-left: 15px;
+    margin-top: 4px;
+    color: #6A707B;
+}
+
+hr {
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 40px;
+    background: #E3E3E4;
+}
+
+.social_icon {
+    margin-top: 50px;
+    margin-left: 118px;
+}
+
+.social_icon_content {
+    display: flex;
+    justify-content: space-between;
+    width: 244px;
+    height: 46px;
+}
+
+
+.facebook_normal{
+    width: 46px;
+    height: 46px;
+    background-image: url("../img/social_ic/social_ic_all/ic_facebook.svg");
+    display: block;
+
+}
+/*на расмотрение домашнее задание*/
+.facebook:hover{
+    background-image: url("../img/social_ic/social_ic_all/ic_instagram.svg");
 }
 
 
@@ -160,6 +236,62 @@ section {
         background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
     }
 
+    .title {
+        margin: 0;
+    }
+
+    .title h1 {
+        font-size: 24px;
+        margin: 32px 20px 0 20px;
+
+    }
+
+    div.input_email form {
+        margin: 20px 20px 0 20px;
+        padding-left: 15px;
+        width: 295px;
+        height: 60px;
+    }
+
+    .email {
+        width: 225px;
+        padding: 0;
+    }
+
+    div.text p {
+        line-height: 26px;
+        margin: 14px 20px 0 20px;
+        padding: 0;
+    }
+
+    .btn {
+        margin-left: 10px;
+    }
+
+    .tos {
+        margin: 22px 20px;
+    }
+
+    .tos label {
+        font-size: 16px;
+    }
+
+    hr {
+        margin: 0 20px;
+        padding: 0;
+        width: 295px;
+    }
+
+
+    .social_icon {
+        margin-top: 18px;
+        margin-left: 53px;
+    }
+
+    .social_icon_content {
+        width: 214px;
+    }
+
     .image_desk {
         display: none;
     }
@@ -169,4 +301,5 @@ section {
         position: absolute;
         top: 66px;
     }
+
 }
