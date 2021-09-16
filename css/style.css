@@ -157,18 +157,106 @@ hr {
 }
 
 
-.facebook_normal{
+.facebook_link {
     width: 46px;
     height: 46px;
-    background-image: url("../img/social_ic/social_ic_all/ic_facebook.svg");
     display: block;
+    border: 2px solid #E2E3E4;
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-image: url("../img/social_ic/ic_facebook.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.facebook_link:hover {
+    border: 2px solid #4267B2;
+    background-color: #4267B2;
+    background-image: url("../img/social_ic/ic_facebook_hover.svg");
+    box-shadow: 0 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.facebook_link:active {
+    border: 2px solid #2F4A80;
+    background-color: #2F4A80;
+    box-shadow: 0 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.instagram_link {
+    width: 46px;
+    height: 46px;
+    display: block;
+    border: 2px solid #E2E3E4;
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-image: url("../img/social_ic/ic_instagram.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.instagram_link:hover {
+    border: 2px solid #C13584;
+    background-color: #C13584;
+    background-image: url("../img/social_ic/ic_instagram_hover.svg");
+    box-shadow: 0 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.instagram_link:active {
+    border: 2px solid #8F2762;
+    background-color: #8F2762;
+    box-shadow: 0 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.twitter_link {
+    width: 46px;
+    height: 46px;
+    display: block;
+    border: 2px solid #E2E3E4;
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-image: url("../img/social_ic/ic_twitter.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
-/*на расмотрение домашнее задание*/
-.facebook:hover{
-    background-image: url("../img/social_ic/social_ic_all/ic_instagram.svg");
+
+.twitter_link:hover {
+    border: 2px solid #1DA1F2;
+    background-color: #1DA1F2;
+    background-image: url("../img/social_ic/ic_twitter_hover.svg");
+    box-shadow: 0 20px 40px rgba(19, 24, 33, 0.3);
 }
 
+.twitter_link:active {
+    border: 2px solid #177FBF;
+    background-color: #177FBF;
+    box-shadow: 0 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.youtube_link {
+    width: 46px;
+    height: 46px;
+    display: block;
+    border: 2px solid #E2E3E4;
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-image: url("../img/social_ic/ic_youtube.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.youtube_link:hover {
+    border: 2px solid #FF0000;
+    background-color: #FF0000;
+    background-image: url("../img/social_ic/ic_youtube_hover.svg");
+    box-shadow: 0 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.youtube_link:active {
+    border: 2px solid #CC0000;
+    background-color: #CC0000;
+    box-shadow: 0 20px 40px rgba(19, 24, 33, 0.3);
+}
 
 .image_desk {
     position: absolute;
@@ -180,7 +268,7 @@ hr {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (device-width: 375px) {
     body {
         /*background-color: red;*/
         font-size: 14px;
