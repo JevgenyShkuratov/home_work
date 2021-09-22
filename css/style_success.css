@@ -59,7 +59,6 @@ header {
 
 .menu a {
     margin-left: 30px;
-    /*text-decoration: none;*/
     color: #131821;
 }
 
@@ -71,13 +70,9 @@ header {
     color: #233759;;
 }
 
-
-/*second page*/
-
 .content {
     width: 400px;
     height: 400px;
-    /*background-color: tomato;*/
     margin-left: 140px;
     margin-top: 130px;
 }
@@ -88,15 +83,11 @@ header {
     background-image: url("../img/logo/success.svg");
 }
 
-.content_text {
-    background-color: #4066A5;
-}
 
 .content_text h1 {
     width: 400px;
     height: 44px;
     margin-top: 32px;
-    /*background-color: grey;*/
 
 }
 
@@ -325,7 +316,6 @@ hr {
         margin-top: 10px;
         font-size: 14px;
         line-height: 26px;
-        /*color: #6A707B;*/
     }
 
 
@@ -334,6 +324,7 @@ hr {
         margin-left: 20px;
         margin-top: 39px;
     }
+
     .social_icon {
         margin-top: 20px;
         margin-left: 53px;
@@ -342,6 +333,7 @@ hr {
     .social_icon_content {
         width: 214px;
     }
+
     .image_desk {
         display: none;
     }
@@ -352,3 +344,4 @@ hr {
         top: 66px;
     }
 }
+
