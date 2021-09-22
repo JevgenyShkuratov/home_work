@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <div class="container">
 
     <div class="content_container">
@@ -39,18 +40,34 @@
                 </div>
 
                 <div class="content_form">
-                    <form action="#">
-                        <input class="email" type="email" placeholder="Type your email address here…">
-                        <button class="btn" type="submit"></button>
+
+
+                    <form id="form" method="post" action="success.html" onsubmit="return validateForm()">
+                        <input
+                                type="text"
+                                id="email"
+                                name="email"
+                                class="email"
+                                placeholder="Type your email address here…"
+                                pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+                                title="Please provide a valid e-mail address"
+                        >
+                        <button id="btn" type="submit" name="btn" class="btn"></button>
                     </form>
                 </div>
 
-                <div class="tos">
+                <form class="tos" onsubmit="return validateForm()">
                     <div class="tos_content">
-                        <input type="checkbox" id="check" class="custom_checkbox">
-                        <label class="tos_label" for="check"><span class="tos_text">I agree to <a href="#">terms of service</a></span></label>
+                        <input type="checkbox"
+                               id="custom_checkbox"
+                               name="custom_checkbox"
+                               class="custom_checkbox">
+                        <label class="tos_label"
+                               for="custom_checkbox">
+                            <span class="tos_text">I agree to <a href="#">terms of service</a></span>
+                        </label>
                     </div>
-                </div>
+                </form>
                 <hr>
 
                 <div class="social_icon">
@@ -81,5 +98,7 @@
     </div>
 
 </div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
